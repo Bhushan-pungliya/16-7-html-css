@@ -1,0 +1,70 @@
+.lingrad {
+  column-count: 3;
+  height: 400px;
+}
+
+#lingrad1 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+#lingrad2 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+#lingrad3 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+}
+
+#radgrad {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  background-image: radial-gradient(circle, red, white, brown);
+}
+
+.animation > h1 {
+  text-align: center;
+  vertical-align: middle;
+}
+.animation {
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  position: relative;
+  animation-name: slide;
+  animation-duration: 4s;
+  animation-iteration-count: 4;
+}
+@keyframes slide {
+  0% {
+    background-color: red;
+    left: 100px;
+    top: 100px;
+  }
+  25% {
+    background-color: yellow;
+    left: 100px;
+    top: 100px;
+  }
+  50% {
+    background-color: blue;
+    right: 00px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    right: 0px;
+    top: 100px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
